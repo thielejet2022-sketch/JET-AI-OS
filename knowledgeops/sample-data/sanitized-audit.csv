@@ -1,0 +1,6 @@
+Title,Type,Breadcrumb,Top_Level,Section,Sub_Section,Page_ID,Notion_URL,Last_Edited,Depth,Edit_Bucket,Is_Orphaned,Is_Interview
+Service Platform Research,Page,Work > Service Platform Research,Work,,,sample-page-001,https://example.com/page-001,2026-07-08,2,Active,FALSE,FALSE
+Target Company Interview Notes,Page,Target Company Interview Notes,,,,sample-page-002,https://example.com/page-002,2026-06-01,1,Recent,TRUE,TRUE
+MAIN,Page,Home > Work > MAIN,Home,Work,,sample-page-003,https://example.com/page-003,2025-12-01,3,Review,FALSE,FALSE
+Old Reference,Page,Home > Archive > Old Reference,Home,Archive,,sample-page-004,https://example.com/page-004,2024-01-01,3,Archive,FALSE,FALSE
+Deep Research Note,Page,Home > Work > Research > Topic > Subtopic > Deep Research Note,Home,Work,Research,sample-page-005,https://example.com/page-005,2026-07-01,6,Active,FALSE,FALSE
