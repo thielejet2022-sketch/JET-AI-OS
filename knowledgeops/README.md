@@ -21,7 +21,35 @@ KnowledgeOps is a knowledge-operations platform for making large personal knowle
 
 ## Current Milestone
 
-Milestone Alpha: Architecture Freeze
+Milestone Beta: Snapshot and Rules MVP
+
+## Run the Pipeline
+
+From the `knowledgeops` directory:
+
+```bash
+python -m pip install -e ".[dev]"
+python -m knowledgeops.cli sample-data/sanitized-audit.csv \
+  --output-csv evaluated-snapshot.csv \
+  --output-json evaluated-snapshot.json
+```
+
+The input CSV matches the current Google Sheet audit headers:
+
+```text
+Title, Type, Breadcrumb, Top_Level, Section, Sub_Section,
+Page_ID, Notion_URL, Last_Edited, Depth, Edit_Bucket,
+Is_Orphaned, Is_Interview
+```
+
+## Test
+
+```bash
+ruff check src tests
+pytest -q
+```
+
+GitHub Actions runs linting and tests whenever KnowledgeOps files change.
 
 ## Canonical Documentation
 
