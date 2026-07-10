@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://knowledgeops.local/schemas/raw-snapshot.schema.json",
+  "title": "KnowledgeOps Raw Snapshot Record",
+  "type": "object",
+  "required": [
+    "title",
+    "page_id",
+    "edit_bucket",
+    "is_orphaned",
+    "is_interview"
+  ],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "page_id": {"type": "string", "minLength": 1},
+    "notion_url": {"type": ["string", "null"], "format": "uri"},
+    "breadcrumb": {"type": "string"},
+    "top_level": {"type": "string"},
+    "section": {"type": "string"},
+    "sub_section": {"type": "string"},
+    "last_edited": {"type": ["string", "null"], "format": "date-time"},
+    "depth": {"type": "integer", "minimum": 0},
+    "edit_bucket": {
+      "enum": ["Active", "Recent", "Review", "Archive"]
+    },
+    "is_orphaned": {"type": "boolean"},
+    "is_interview": {"type": "boolean"}
+  },
+  "additionalProperties": false
+}
